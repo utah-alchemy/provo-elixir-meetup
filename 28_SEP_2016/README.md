@@ -9,7 +9,8 @@
 * Write a function that concatenates two lists.
 * Write a function that combines two lists by alternatingly taking elements, e.g. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 
-Hint: see [Comprehensions](http://elixir-lang.org/getting-started/comprehensions.html) in the Elixir Guides.
+~~Hint: see [Comprehensions](http://elixir-lang.org/getting-started/comprehensions.html) in the Elixir Guides.~~
+Hint: Use [|] pattern for prepending elements to a list.  Ex. [1, 2 | [3,4]] => [1,2,3,4]
 
 # List Element Count
 
