@@ -9,13 +9,12 @@ defmodule ValueTypes do
   #     end
 
   def any_type(tuple) when is_tuple(tuple) do
+    "Tuple!"
+  end
+  # you can match a map by using an explicit map in the function signature
+  def any_type(%{}) do
     # Code
   end
-
-  # you can match a map by using an explicit map in the function signature
-  #def any_type(map) do
-    # Code
-  #end
 
   #def any_type(integer) do
     # Code

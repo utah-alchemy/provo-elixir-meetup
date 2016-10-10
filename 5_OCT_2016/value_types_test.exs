@@ -15,34 +15,39 @@ defmodule ValueTypesTest do
     assert actual == expected
   end
 
-  @tag :skip
+  #@tag :skip
   test "Returns `Map!` for tuple value type" do
     assert ValueTypes.any_type(%{1 => 2}) == "Map!"
   end
 
-  @tag :skip
+  #@tag :skip
   test "Returns `Tuple!` for tuple value type" do
     assert ValueTypes.any_type({1,2}) == "Tuple!"
   end
 
-  @tag :skip
+  #@tag :skip
   test "Returns `Integer!` for integer value type" do
     assert ValueTypes.any_type(1) == "Integer!"
   end
 
-  @tag :skip
+  #@tag :skip
   test "Returns `Float!` for float value type" do
-    assert ValueTypes.any_type({1,2}) == "Float!"
+    assert ValueTypes.any_type(1.2) == "Float!"
   end
 
-  @tag :skip
+  #@tag :skip
   test "Returns `Atom!` for atom value type" do
     assert ValueTypes.any_type(:atom) == "Atom!"
   end
 
-  @tag :skip
+  #@tag :skip
   test "Returns `List!` for list value type" do
-    assert ValueTypes.any_type({1,2}) == "List!"
+    assert ValueTypes.any_type([1,2]) == "List!"
+  end
+
+  #@tag :skip
+  test "Returns `String!` for list value type" do
+    assert ValueTypes.any_type("string") == "String!"
   end
 
 end
